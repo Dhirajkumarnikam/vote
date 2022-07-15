@@ -1,0 +1,508 @@
+<!doctype>
+<html>
+<head>
+<title>VOTE</title>
+<style>
+	body{
+		background-color:#fffaf0;
+	}
+	#allpar{
+		height:600px;
+		width:600px;
+		background-color:#dcdcdc;
+		border:1px solid black;
+		border-radius:20px;
+		box-shadow:2px 2px 2px black;
+		float:left;
+	}
+	#voter{
+		height:470px;
+		width:520px;
+		background-color:#dcdcdc;
+		border-radius:20px;
+		border:1px solid black;
+		box-shadow:1px 1px 1px black;
+		position:relative;
+		top:70px;
+		left:700px;
+	}
+	#allpar #b div{
+		height:50px;
+		width:335px;
+		border-radius:5px;
+		border:1px solid black;
+		position:relative;
+		top:35px;
+		left:50px;
+		float:left;
+		color:red;
+		font-weight:bold;
+		font-size:2.3rem;
+		padding-left:10px;
+		font-family:Corbel;
+		text-shadow:1px 1px 1px black;
+		background-image:linear-gradient(0,#87cefa,white)
+	}
+	#allpar .a .light{
+		height:50px;
+		width:120px;
+		border:1px solid black;
+		background-color:#dcdcdc;
+		position:relative;
+		top:35px;
+		left:400px;
+		border-radius:5px;
+	}
+	#allpar .a .light .c{
+		height:30px;
+		width:60px;
+		border-radius:20px;
+		position:relative;
+		top:10px;
+		left:40px;
+		border:1px solid black;
+		background-image:linear-gradient(0,blue,black);
+	}
+	#allpar .a .light .d{
+		height:30px;
+		width:60px;
+		border-radius:20px;
+		position:relative;
+		top:10px;
+		left:40px;
+		border:1px solid black;
+		background-image:linear-gradient(0,#dcdcdc,black);
+	}
+	#allpar .a .light .m{
+		position:absolute;
+		top:11px;
+		right:55px;
+	}
+	#allpar div img{
+		float:right;
+		position:relative;
+		right:30px;
+	}
+	#voter .f{
+		height:200px;
+		width:500px;
+		background-image:linear-gradient(0,#778899,brown,#708090);
+		position:relative;
+		top:10px;
+		left:10px;
+	}
+	#voter .g .h{
+		position:absolute;
+		background-color:red;
+		right:400px;
+		top:300px;
+		height:40px;
+		width:80px;
+		font-size:20px;
+	}
+	#voter .g .i{
+		position:absolute;
+		background-color:#e6e6fa;
+		right:70px;
+		top:300px;
+		height:40px;
+		width:80px;
+		font-size:20px;
+	}
+	#voter .h{
+		position:absolute;
+		bottom:80px;
+		left:30px;
+	}
+	#voter .i{
+		position:absolute;
+		bottom:80px;
+		left:400px;
+	}
+	#voter .j{
+		position:absolute;
+		bottom:40px;
+		left:400px;
+	}
+	#voter .k{
+		position:absolute;
+		bottom:200px;
+		left:200px;
+	}
+	#voter #bulb{
+		height:20px;
+		width:20px;
+		background-color:green;
+		border-radius:35px;
+		border:1px solid black;
+		position:absolute;
+		bottom:230px;
+		left:460px;
+		
+	}
+	#picture{
+			position: relative;
+		z-index: 100;
+		bottom: 540px;	
+		left: 170px;
+	}
+</style>
+</head>
+<body>
+<div id="allpar">
+	<div id="b">
+	<div id="congress">
+		Congress <img src="hand.jpg" height="40px" width="40px">
+	</div>
+	<div id="bjp">
+		BJP <img src="lotus.png" height="40px" width="40px">
+	</div>
+	<div id="tdp">
+		TDP <img src="cycle.png" height="50px" width="50px">
+	</div>
+	<div id="ysr">
+		YSR Congress <img src="fan.png" height="40px" width="40px">
+	</div>
+	<div id="loksatha">
+		Loksatha <img src="vissel.png" height="40px" width="40px">
+	</div>
+	<div id="cpm">
+		CPM <img src="cpm.png" height="40px" width="40px">
+	</div>
+	<div id="trs">
+		TRS <img src="car.jpg" height="40px" width="40px">
+	</div>
+	<div id="prp">
+		PRP <img src="prp.png" height="40px" width="40px" style="border-radius:100px;">
+	</div>
+	<div>
+		
+	</div>
+	<div>
+		
+	</div>
+	</div>
+	<div class="a">
+	<div class="light" onclick="change(0);" id="b0">
+		<div class="c">
+			
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(1);" id="b1">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(2);" id="b2">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(3);" id="b3">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(4);" id="b4">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(5);" id="b5">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(6);" id="b6">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light" onclick="change(7);" id="b7">
+		<div class="c">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light">
+		<div class="d">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div>
+	<div class="light">
+		<div class="d">
+			
+		</div>
+		<div class="m">
+			<img src="larrow.PNG" height="30px" width="30px">
+		</div>
+	</div></div>
+	
+</div>
+
+
+<div id="voter">
+		<div class="f">
+			<img src="#" width="130px" height="120px" id="picture" style="visibility: hidden;">
+		</div>
+		<div class="g">
+		<button class="h" onclick="reset();">Reset</button>
+		<button class="i" onclick="counting();">Count</button>
+		</div>
+		<div class="h">
+			<img src="tick.PNG" height="35px" width="35px" onclick="addVote();">
+			<img src="cross.PNG" height="35px" width="35px" onclick="cancell();">			
+		</div>
+		<div class="i">
+			<img src="tick.PNG" height="35px" width="35px" onclick="openWindow();">
+			<img src="cross.PNG" height="35px" width="35px" onclick="closeWindow();">			
+		</div>
+		<div class="j">
+			<img src="larrow.PNG" height="35px" width="35px" onclick="findVotes(1);">
+			<img src="rarrow.PNG" height="35px" width="35px" onclick="findVotes(2);">
+		</div>
+		<div class="k">
+			<img src="power.PNG" id="pow" height="40px" width="40px" onclick="onOff();">
+		</div>
+		<div  id="bulb">
+			
+		</div>
+	
+</div>
+<script>
+	var totalvotes=0;
+		var imagesrc="";
+		var congress=0;
+		var bjp=0;
+		var tdp=0;
+		var ysrcongress=0;
+		var loksatha=0;
+		var cpm=0;
+		var trs=0;
+		var prp=0;
+		var index=1;
+	function onOff(){
+
+		var images=["hand.jpg","lotus.png","cycle.png","fan.png","vissel.png","cpm.png","car.jpg","prp.png"];
+		if(document.getElementById("allpar").style.visibility=="hidden"){
+		document.getElementById("allpar").style.visibility="visible";
+		document.getElementById("bulb").style.backgroundColor="green";
+		for(let k=0;k<8;k++){
+			if(imagesrc==images[k]){
+				var buttonb="b"+k;
+				document.getElementById(buttonb).style.visibility="hidden";
+			}
+			else{
+				var buttonb="b"+k;
+				document.getElementById(buttonb).style.visibility="visible";
+			}
+		}
+		}
+		else{
+			
+		document.getElementById("allpar").style.visibility="hidden";
+		document.getElementById("bulb").style.backgroundColor="red";
+		for(let k=0;k<8;k++){
+			var buttonName="b"+k;
+			document.getElementById(buttonName).style.visibility="hidden";
+		}
+		
+		}
+		
+		
+	}
+
+	function change(i){
+		var images=["hand.jpg","lotus.png","cycle.png","fan.png","vissel.png","cpm.png","car.jpg","prp.png"];
+		var buttonName="b"+i;
+		document.getElementById(buttonName).style.visibility="hidden";
+			for(let k=0;k<8;k++){
+				if(i==k){
+					continue;
+				}
+				else{
+					var buttonn="b"+k;
+					document.getElementById(buttonn).style.visibility="visible";
+				}
+			}
+			document.getElementById("picture").src=images[i];
+			imagesrc=images[i];
+			document.getElementById("picture").style.visibility="visible";
+			 for(let k=0;k<8;k++){
+			
+			 	if(imagesrc==images[k]){
+					continue;
+			 	}
+				else{
+					var buttonn="b"+k;
+			 		document.getElementById(buttonn).style.visibility="visible";
+			 	}
+			 }
+			
+		}
+
+		function cancell(){
+					document.getElementById("picture").style.visibility="hidden";
+		for(let k=0;k<9;k++){
+					var buttonn="b"+k;
+					document.getElementById(buttonn).style.visibility="visible";
+							
+			}
+			imagesrc="";
+	 
+	}
+
+	function reset(){
+		congress=0;
+		bjp=0;
+		tdp=0;
+		ysrcongress=0;
+		loksatha=0;
+		cpm=0;
+		trs=0;
+		prp=0;
+	}
+
+	function openWindow() {  
+  newWindow = window.open("", "myWindow", "width=200,height=180");  
+  newWindow.document.write("<b>VOTES</b>");  
+  newWindow.document.write("<br>1.Congress = "+ congress ); 
+  newWindow.document.write("<br>2.Ysr congress = "+ ysrcongress ); 
+  newWindow.document.write("<br>3.TRS = "+ trs); 
+  newWindow.document.write("<br>4.PRP = "+ prp ); 
+  newWindow.document.write("<br>5.BJP = "+ bjp ); 
+  newWindow.document.write("<br>6.CPM = "+ cpm ); 
+  newWindow.document.write("<br>7.TDP= "+ tdp ); 
+  newWindow.document.write("<br>8.loksatha= "+ loksatha); 
+}  
+  
+function closeWindow() {  
+  newWindow.close();  
+}  
+
+
+function addVote(){
+var images=["hand.jpg","lotus.png","cycle.png","fan.png","vissel.png","cpm.png","car.jpg","prp.png"];		
+console.log(imagesrc);	
+			for(let i=1;i<9;i++){
+			if(imagesrc==images[i]){
+				let k=images[i].split(".");
+				if(k[0]=="hand"){
+					congress+=1;
+			
+				}
+				else if(k[0]=="lotus"){
+					bjp+=1;
+					
+				}
+				else if(k[0]=="cycle"){
+					tdp+=1;
+					
+				}
+				else if(k[0]=="fan"){
+					ysrcongress+=1;
+					
+				}
+				else if(k[0]=="vissel"){
+					loksatha+=1;
+					
+				}
+				else if(k[0]=="cpm"){
+					cpm+=1;
+					
+				}
+				else if(k[0]=="car"){
+					trs+=1;
+					
+				}
+				else{
+					prp+=1;
+					
+				}
+
+			}
+			}
+		}
+	
+	function counting(){
+				totalvotes=congress+ysrcongress+trs+prp+bjp+cpm+tdp+loksatha;
+				alert("Total number of votes polled = "+totalvotes);
+			}
+
+
+	function findVotes(i){
+	if(i==1){
+		if(index==1){
+			index=8;
+		}
+		else{
+			index-=1;
+		}
+	}
+	if(i==2){
+		if(index==8){
+			index=1;
+		}
+		else{
+			index+=1;
+		}
+	}
+
+	if(index==1){
+		alert("Votes of congress = "+congress );
+	}
+	else if(index==2){
+		alert("Votes ysrcongress got = "+ysrcongress);
+	}
+	else if(index==3){
+		alert("Votes TRS  got= "+trs);
+	}
+	else if(index==4){
+		alert("Votes PRP got = "+prp);
+	}
+	else if(index==5){
+		alert("Votes  BJP got = "+bjp);
+	}
+	else if(index==6){
+		alert("Votes CPM  got = "+cpm);
+	}
+	else if(index==7){
+		alert("Votes TDP got = "+tdp);
+	}
+	else if(index==8){
+		alert("Votes loksatha got = "+loksatha);
+	}
+	else{console.log("ok");
+}
+}
+
+</script>
+</body>
+</html>
